@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Issa's Portofolio</title>
+</head>
+<body class="bg-slate-950 text-white">
+    <header class="mx-3 my-2">
+        <div class="flex justify-between items-center">
+            <a href="#" class="font-bold text-2xl">ISSA NIANG </a>
+            <nav class="hidden sm:flex">
+                <ul class="flex gap-8 ">
+                    <li><a href="index.html#projets" class="hover:text-green-400">Projets</a></li>
+                    <li><a href="index.html" class="hover:text-green-400">Accueil</a></li>
+                    <li><a href="#contact" class="hover:text-green-400">Contact</a></li>
+                </ul>
+            </nav>
+           <div class="flex flex-col gap-2.5 sm:hidden">
+                <div class="menu-button absolute top-2 right-3 cursor-pointer">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="menu-links text-center hidden absolute right-0 top-10 bg-slate-700 p-5 w-full sm:hidden">
+                    <ul>
+                        <li class="hover:text-green-400"><a href="index.html#projets">Projets</a></li>
+                        <li class="hover:text-green-400"><a href="about.html">À propos</a></li>
+                        <li class="hover:text-green-400"><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+           </div>
+        </div>
+    </header>
+    <script>
+        const menuRespButton = document.querySelector('.menu-button')
+        const menuRespButtonIcon = document.querySelector('.menu-button i')
+        const menuResplink = document.querySelector('.menu-links')
+
+        menuRespButton.onclick = function(){
+            menuResplink.classList.toggle('hidden')
+        }
+    </script>
+    <main class="my-20 mx-8 grid grid-cols-1 gap-y-8 sm:grid sm:grid-cols-2 sm:gap-8">
+        <div>
+             <h2 class="uppercase font-semibold text-5xl">à propos de moi</h2>
+        </div>
+        <div> 
+            <p class="font-medium tracking-tight">Je suis un développeur basé à DAKAR, avec une formation en Réseaux et Télécommunication.</p>
+            <p class="font-light">Je suis un développeur front-end basé à DAKAR, à la recherche d'opportunités stimulantes. Avec une formation en Réseaux et Télécommunication. Je mets un point d'honneur à privilégier l'accessibilité lors du développement. Passionné et curieux j'aime résoudre des problèmes complexes.</p>
+            <p class="font-light">Actuellement, j'explore Git/GitHub, Python et JavaScript et m'initie également au design avec Figma et Canva. En dehors du codage, j'aime jouer au football, les jeux vidèos et l'auto-didacte. Je continue à apprendre pour acquérir de nouvelles competences et évoluer dans la tech.</p>
+            <div class="mt-6 px-2">
+                <button type="submit" class="uppercase p-1 bg-green-400 rounded-xl text-slate-950 ">télécharger cv <i class="fa-solid fa-download p-1 rounded-full bg-slate-950 text-100 text-white "></i></button>
+                <a href="http://" class="p-1 bg-slate-700 text-green-400 rounded-full ml-1.5"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="http://" class="p-1 bg-slate-700 text-green-400 rounded-full ml-1.5"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+        <div class="sm:col-span-2">
+            <img src="../../img/images/chill.png" alt="">
+        </div>
+        <div>
+            <h2 class="uppercase font-semibold text-3xl">mes compétences</h2>
+        </div>
+        <div>
+            <p class="font-light">Je suis toujours à la recherche de nouvelles compétences à développer.J'aime relever des nouveaux défis, apprendre des technologies variées et enrichir continuellement mon savoir-faire pour proposer des solutions modernes et efficaces.</p>
+            <div class="flex justify-center mt-5 flex-wrap gap-2.5">
+                <p class="rounded-xl p-1.5 border border-slate-500 w-2/12 text-center uppercase" >html</p>
+                <p class="rounded-xl p-1.5 border w-2/12 text-center border-slate-500 uppercase" >css</p>
+                <p class="rounded-xl p-1.5 border w-2/12 text-center border-slate-500 uppercase">javascript</p>
+                <p class="rounded-xl p-1.5 border w-2/12 text-center border-slate-500 uppercase">python</p>
+                <p class="rounded-xl p-1.5 border w-2/12 text-center border-slate-500 uppercase">linux</p>
+                <p class="rounded-xl p-1.5 border w-2/12 text-center border-slate-500 uppercase">canva</p>
+                <p class="rounded-xl p-1.5 border w-2/12 text-center border-slate-500 uppercase">réseaux</p>
+                <p class="rounded-xl p-1.5 border w-2/12 text-center border-slate-500 uppercase">sécurté</p>
+            </div>
+        </div>
+        <div>
+            <h2 class="uppercase font-semibold text-3xl">mon expérience</h2>
+        </div>
+        <div>
+            <div class="sm:flex justify-between">
+                <p class="font-semibold">Stagiaire chez Xarala</p>
+                <p class="font-light">Jan 2026 - Present</p>
+            </div>
+            <p class="font-light">Xarala est une plateforme éducative panafricaine qui propose des formations de qualité répondant à la demande du marché. J'y suis une formation en Developpement Web Full Stack avev des mentors qualifiés et qui me pousse vers la reussite.</p>
+        </div>
+    </main>
+   <footer class="mx-3 grid grid-cols-1 sm:grid sm:grid-cols-2" id="contact">
+        <div class="sm:leading-8">
+            <h2 class="uppercase font-semibold text-3xl mb-4 sm:mb-4">Entrons en Contact</h2>
+            <p>Dites bonjour à <a href="mailto:niangissa705@gmail.com" class="border-b-green-400 border-b sm:my-4">niangissa705@gmail.com</a></p>
+            <p>Pour en sqvoir plus voici mon.. <a href="#" class="border-b-green-400 border-b">cv</a></p>
+            <div class="text-green-400 text-xl mt-1.5">
+                <a href="http://"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="http://"><i class="fa-brands fa-github"></i></a>
+                <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="flex flex-col mt-4">
+            <form action="" class="flex flex-col gap-6">
+                <label for="">Nom Complet</label>
+                <input type="text" placeholder="John Doe" class="bg-white font-normal text-black p-1 rounded-xs">
+                <label for="">Email</label>
+                <input type="email" placeholder="example@gmail.com" class="bg-white font-normal text-black p-1 rounded-xs">
+                <label for="">Sujet</label>
+                <input type="text" placeholder="Ex: portofolio" class="bg-white font-normal text-black p-1 rounded-xs">
+                <label for="">Message</label>
+                <textarea name="" id="" placeholder="Que puis-je faire pour vous 😁?" class="bg-white font-normal text-black p-1 rounded-xs"></textarea>
+                <input type="submit" value="Envoyer" class="bg-green-400 font-medium text-black p-1 rounded-xs w-2/6 cursor-pointer">
+
+            </form>
+        </div>
+        <div class="mt-8">
+            <p>&copy; 2026 Issa Niang</p>
+        </div>
+    </footer>
+</body>
+</html>
