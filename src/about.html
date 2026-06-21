@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -48,15 +48,15 @@
         <div> 
             <p class="font-medium tracking-tight">Je suis un développeur basé à DAKAR, avec une formation en Réseaux et Télécommunication.</p>
             <p class="font-light">Je suis un développeur front-end basé à DAKAR, à la recherche d'opportunités stimulantes. Avec une formation en Réseaux et Télécommunication. Je mets un point d'honneur à privilégier l'accessibilité lors du développement. Passionné et curieux j'aime résoudre des problèmes complexes.</p>
-            <p class="font-light">Actuellement, j'explore Git/GitHub, Python et JavaScript et m'initie également au design avec Figma et Canva. En dehors du codage, j'aime jouer au football, les jeux vidèos et l'autodidacte. Je continue à apprendre pour acquérir de nouvelles competences et évoluer dans la tech.</p>
-            <div class="mt-6 px-2">
-                <button type="submit" class="uppercase p-1 bg-green-400 rounded-xl text-slate-950 ">télécharger cv <i class="fa-solid fa-download p-1 rounded-full bg-slate-950 text-100 text-white "></i></button>
-                <a href="http://" class="p-1 bg-slate-700 text-green-400 rounded-full ml-1.5"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="http://" class="p-1 bg-slate-700 text-green-400 rounded-full ml-1.5"><i class="fa-brands fa-github"></i></a>
+            <p class="font-light">Actuellement, j'explore Git/GitHub, Python , JavaScript, ReactJS et m'initie également au design avec Figma et Canva. En dehors du codage, j'aime jouer au football, les jeux vidèos et l'autodidacte. Je continue à apprendre pour acquérir de nouvelles competences et évoluer dans la tech.</p>
+            <div class="mt-6 px-1">
+                <button type="submit" class="uppercase p-1 bg-green-400 rounded-xl text-slate-950 font-semibold " ><a href="../cv/Issa_NIANG_CV.pdf" download="CV_Issa_Niang_Dev_Web">télécharger cv</a> <i class="fa-solid fa-download p-1 rounded-full bg-slate-950 text-lg size-6 text-white "></i></button>
+                <a href="https://www.linkedin.com/in/issa-niang-82435725b" class="p-1 bg-slate-700 text-green-400 rounded-full ml-1.5"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/issaniang17" class="p-1 bg-slate-700 text-green-400 rounded-full ml-1.5"><i class="fa-brands fa-github"></i></a>
             </div>
         </div>
-        <div class="sm:col-span-2">
-            <img src="../img/chill.png" alt="">
+        <div class="sm:col-span-2 ">
+            <img src="../img/dev.png" alt="dev" class="md:h-180 w-full">
         </div>
         <div>
             <h2 class="uppercase font-semibold text-3xl">mes compétences</h2>
@@ -91,22 +91,20 @@
             <p>Dites bonjour à <a href="mailto:niangissa705@gmail.com" class="border-b-green-400 border-b sm:my-4">niangissa705@gmail.com</a></p>
             <p>Pour en savoir plus voici mon.. <a href="#" class="border-b-green-400 border-b">cv</a></p>
             <div class="text-green-400 text-xl mt-1.5">
-                <a href="http://"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="http://"><i class="fa-brands fa-github"></i></a>
-                <a href=""><i class="fa-brands fa-x-twitter"></i></a>
-                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/issa-niang-82435725b"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/issaniang17"><i class="fa-brands fa-github"></i></a>
             </div>
         </div>
         <div class="flex flex-col mt-4">
-            <form action="" class="flex flex-col gap-6">
-                <label for="">Nom Complet</label>
-                <input type="text" placeholder="John Doe" class="bg-white font-normal text-black p-1 rounded-xs">
-                <label for="">Email</label>
-                <input type="email" placeholder="example@gmail.com" class="bg-white font-normal text-black p-1 rounded-xs">
-                <label for="">Sujet</label>
-                <input type="text" placeholder="Ex: portofolio" class="bg-white font-normal text-black p-1 rounded-xs">
-                <label for="">Message</label>
-                <textarea name="" id="" placeholder="Que puis-je faire pour vous 😁?" class="bg-white font-normal text-black p-1 rounded-xs"></textarea>
+            <form action="https://formspree.io/f/maqgwlqz" method="POST" class="flex flex-col gap-6">
+                <label for="nom">Nom Complet</label>
+                <input type="text" placeholder="John Doe" class="bg-white font-normal text-black p-1 rounded-xs" id="nom">
+                <label for="email">Email</label>
+                <input type="email" placeholder="example@gmail.com" class="bg-white font-normal text-black p-1 rounded-xs" id="email">
+                <label for="sujet">Sujet</label>
+                <input type="text" placeholder="Ex: portofolio" class="bg-white font-normal text-black p-1 rounded-xs" id="sujet">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" placeholder="Que puis-je faire pour vous 😁?" class="bg-white font-normal text-black p-1 rounded-xs"></textarea>
                 <input type="submit" value="Envoyer" class="bg-green-400 font-medium text-black p-1 rounded-xs w-2/6 cursor-pointer">
 
             </form>
